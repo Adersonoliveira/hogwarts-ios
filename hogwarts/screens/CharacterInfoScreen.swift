@@ -42,8 +42,16 @@ struct CharacterInfoScreen: View {
     
     var body: some View {
         ScrollView() {
-            VStack(alignment: .leading){
-                CharacterDetailTab(heading: "Image", value: "")
+            ZStack {
+                
+                Color.black // Background color
+                            
+            Image("hogwartsBg")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                
+                Color.black.opacity(0.4) // Semi-transparent black ov
+
                 AsyncImage(url: URL(string: character.image)) { phase in
                     switch phase {
                     case .empty:
@@ -52,15 +60,26 @@ struct CharacterInfoScreen: View {
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width:150,height: 150)
+                            .frame(width:120,height: 120)
                             .clipShape(RoundedRectangle(cornerRadius: 100))
-                            .padding(.top,10)
+                            .overlay(
+                                            RoundedRectangle(cornerRadius: 100)
+                                                .stroke(Color.white, lineWidth: 3) // Add white border
+                                        )
+
+                            .padding(.bottom,10)
                     case .failure:
                         Color.red.frame(width: 20, height: 20)
                     @unknown default:
                         Color.gray.frame(width: 20, height: 20)
                     }
                 }
+
+              
+            }.edgesIgnoringSafeArea(.all)
+            VStack(alignment: .leading){
+                
+               
                 
                 HStack{
                     CharacterDetailTab(heading: "Name", value: character.name)
@@ -93,12 +112,18 @@ struct CharacterInfoScreen: View {
                     CharacterDetailTab(heading: "Is Hogwarts Student", value: yesOrNo(value: character.hogwartsStudent))
                 }
                 
-                HStack{
-                    
-                    CharacterDetailTab(heading: "Alt. Name", value: character.alternate_names[0] )
-                    
-                    CharacterDetailTab(heading: "", value: character.alternate_names[1] )
+                if !character.alternate_names.isEmpty {
+                    HStack{
+                        
+                        CharacterDetailTab(heading: "Alt. Name", value: character.alternate_names[0] )
+                        if (character.alternate_names.count == 2) {
+                            CharacterDetailTab(heading: "", value: character.alternate_names[1] )
+                        }
+                        
+                    }
+                   
                 }
+                
                
                
                 
@@ -106,10 +131,10 @@ struct CharacterInfoScreen: View {
            
             }
             .frame(maxWidth: .infinity, alignment: .center)
+            .padding(.horizontal ,20)
 
         }
         .frame(maxHeight: .infinity)
-        .padding(20)
         .onAppear{
             fetchCharacter()
         }.navigationTitle(characterName)

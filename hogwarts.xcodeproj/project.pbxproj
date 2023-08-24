@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D666C5212A979EA500E8C1E6 /* MemberListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666C5202A979EA500E8C1E6 /* MemberListScreen.swift */; };
+		D666C5262A97A27C00E8C1E6 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666C5252A97A27C00E8C1E6 /* Spell.swift */; };
+		D666C5282A97D1D900E8C1E6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666C5272A97D1D900E8C1E6 /* Movie.swift */; };
+		D666C52A2A97D6F400E8C1E6 /* MovieInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666C5292A97D6F400E8C1E6 /* MovieInfoScreen.swift */; };
+		D666C52E2A97E08000E8C1E6 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666C52D2A97E08000E8C1E6 /* Book.swift */; };
+		D666C5302A97E54900E8C1E6 /* BookInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666C52F2A97E54900E8C1E6 /* BookInfoScreen.swift */; };
 		D69F27062A9699FD00168DF4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F27052A9699FD00168DF4 /* Character.swift */; };
 		D69F270B2A96AC0500168DF4 /* CharacterInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F270A2A96AC0500168DF4 /* CharacterInfoScreen.swift */; };
 		D6FD31752A962CF500CFAA23 /* hogwartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD31742A962CF500CFAA23 /* hogwartsApp.swift */; };
@@ -24,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D666C5202A979EA500E8C1E6 /* MemberListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListScreen.swift; sourceTree = "<group>"; };
+		D666C5252A97A27C00E8C1E6 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		D666C5272A97D1D900E8C1E6 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D666C5292A97D6F400E8C1E6 /* MovieInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoScreen.swift; sourceTree = "<group>"; };
+		D666C52D2A97E08000E8C1E6 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		D666C52F2A97E54900E8C1E6 /* BookInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoScreen.swift; sourceTree = "<group>"; };
 		D69F27052A9699FD00168DF4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		D69F270A2A96AC0500168DF4 /* CharacterInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoScreen.swift; sourceTree = "<group>"; };
 		D6FD31712A962CF500CFAA23 /* hogwarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hogwarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +76,9 @@
 				D6FD31922A964EDD00CFAA23 /* MoviesListScreen.swift */,
 				D6FD31942A964EE800CFAA23 /* AboutScreen.swift */,
 				D69F270A2A96AC0500168DF4 /* CharacterInfoScreen.swift */,
+				D666C5202A979EA500E8C1E6 /* MemberListScreen.swift */,
+				D666C5292A97D6F400E8C1E6 /* MovieInfoScreen.swift */,
+				D666C52F2A97E54900E8C1E6 /* BookInfoScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -72,6 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				D69F27052A9699FD00168DF4 /* Character.swift */,
+				D666C5252A97A27C00E8C1E6 /* Spell.swift */,
+				D666C5272A97D1D900E8C1E6 /* Movie.swift */,
+				D666C52D2A97E08000E8C1E6 /* Book.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -183,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D666C5262A97A27C00E8C1E6 /* Spell.swift in Sources */,
 				D6FD31912A964EC400CFAA23 /* SpellsListScreen.swift in Sources */,
 				D69F270B2A96AC0500168DF4 /* CharacterInfoScreen.swift in Sources */,
 				D6FD31872A96310D00CFAA23 /* MenuScreen.swift in Sources */,
@@ -192,9 +211,14 @@
 				D6FD31852A9630D400CFAA23 /* WelcomeScreen.swift in Sources */,
 				D6FD31932A964EDD00CFAA23 /* MoviesListScreen.swift in Sources */,
 				D6FD318D2A964E8E00CFAA23 /* BooksListScreen.swift in Sources */,
+				D666C5212A979EA500E8C1E6 /* MemberListScreen.swift in Sources */,
 				D6FD31772A962CF500CFAA23 /* ContentView.swift in Sources */,
+				D666C5302A97E54900E8C1E6 /* BookInfoScreen.swift in Sources */,
+				D666C52A2A97D6F400E8C1E6 /* MovieInfoScreen.swift in Sources */,
 				D6FD318B2A964E8000CFAA23 /* CharacterListScreen.swift in Sources */,
+				D666C52E2A97E08000E8C1E6 /* Book.swift in Sources */,
 				D6FD31752A962CF500CFAA23 /* hogwartsApp.swift in Sources */,
+				D666C5282A97D1D900E8C1E6 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,9 +344,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hogwarts/Preview Content\"";
+				DEVELOPMENT_TEAM = H6C7G2H9Z2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,6 +363,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.suyash.hogwarts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,9 +375,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hogwarts/Preview Content\"";
+				DEVELOPMENT_TEAM = H6C7G2H9Z2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -365,6 +394,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.suyash.hogwarts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

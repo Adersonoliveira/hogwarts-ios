@@ -1,13 +1,14 @@
 //
-//  BooksListScreen.swift
+//  BookListScreen.swift
 //  hogwarts
 //
-//  Created by Suyash Vashishtha on 23/08/23.
+//  Created by Suyash Vashishtha on 25/08/23.
 //
 
 import SwiftUI
 
-struct BooksListScreen: View {
+struct BookListScreen: View {
+    
     
     @State private var books : [Book] = []
     
@@ -19,10 +20,10 @@ struct BooksListScreen: View {
             URLSession.shared.dataTask(with: url) { data, response, error in
                 if let data = data {
                     do {
-                        let decodedBooks = try JSONDecoder().decode([Book].self, from: data)
+                        let decodeBooks = try JSONDecoder().decode([Book].self, from: data)
 
                         DispatchQueue.main.async {
-                            books = decodedBooks
+                            books = decodeBooks
                         }
                        
                         print(books)
@@ -36,7 +37,7 @@ struct BooksListScreen: View {
         }
     
     var body: some View {
-        ScrollView {
+        ScrollView {            
                 LazyVGrid(
                     columns: [
                         GridItem(.flexible()), GridItem(.flexible()),
@@ -46,7 +47,8 @@ struct BooksListScreen: View {
                     pinnedViews: [],
                     content: {
                         ForEach (books) { book in
-                            BookTab(book: book)
+                            Text(book.title)
+                                .foregroundColor(.red)
                         }
                     })
                 
@@ -67,7 +69,7 @@ struct BookTab : View{
     var body : some View{
         NavigationLink(
             destination:{
-                BookInfoScreen(book:book)
+                Text("Books")
             },
             
             label:{
@@ -75,7 +77,7 @@ struct BookTab : View{
                     AsyncImage(url: URL(string: book.cover)) { phase in
                         switch phase {
                         case .empty:
-                            Color.gray
+                            Color.gray.frame(width: 20,height: 20)
                         case .success(let image):
                             image
                                 .resizable()
@@ -84,7 +86,7 @@ struct BookTab : View{
                                 .padding(10)
                                 .cornerRadius(10)
                         case .failure:
-                            Color.white
+                            Color.red
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width:220,height: 220)
                                 .padding(10)
@@ -106,9 +108,8 @@ struct BookTab : View{
     }
 }
 
-
-struct BooksListScreen_Previews: PreviewProvider {
+struct BookListScreen_Previews: PreviewProvider {
     static var previews: some View {
-        BooksListScreen()
+        BookListScreen()
     }
 }

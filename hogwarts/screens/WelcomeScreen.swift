@@ -9,36 +9,47 @@ import SwiftUI
 
 struct WelcomeScreen: View {
     var body: some View {
-        VStack {
-            Image("sortingHat")
-                .resizable()
-                .frame(width: 200,height: 200,alignment: .center)
-                .padding()
-            
-            Text("Welcome to")
-
         
-            Text("Hogwarts")
-                .font(.system(size: 30))
+        ZStack{
+            Image("bg")
+                .resizable()
+                .frame(width: .infinity,height: .infinity,alignment: .center)
             
-            NavigationLink(
-                destination: MenuScreen(),
-                label:{
-                    Text("Contnue")
-                        .frame(
-                            width: 200,
-                            height: 50,
-                            alignment: .center
-                        )
-                        .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(8)
-                        
-                }
-            )
+            VStack {
+                Image("iconLogo")
+                    .resizable()
+                    .frame(width: 270,height: 250,alignment: .center)
+                    .padding()
+                
+                Text("Welcome to")
+                    .foregroundColor(.white)
+            
+                Text("Hogwarts")
+                    .foregroundColor(.white)
+                    .font(.system(size: 30))
+                
+                NavigationLink(
+                    destination: MenuScreen(),
+                    label:{
+                        Text("Contnue")
+                            .frame(
+                                width: 200,
+                                height: 50,
+                                alignment: .center
+                            )
+                            .foregroundColor(.white)
+                            .background(Color.purple)
+                            .cornerRadius(8)
+                            
+                    }
+                )
+                
+            }
+            .frame(alignment: .bottom)
+            .padding(.top,200)
             
         }
-        .padding()
+       
     
     }
 }

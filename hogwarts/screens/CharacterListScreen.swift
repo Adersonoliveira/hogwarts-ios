@@ -91,7 +91,7 @@ struct CharacterCard : View{
                     AsyncImage(url: URL(string: image)) { phase in
                         switch phase {
                         case .empty:
-                            Color.gray.frame(width: 20, height: 20)
+                            Color.white.frame(width: 20, height: 20)
                         case .success(let image):
                             image
                                 .resizable()
@@ -100,9 +100,13 @@ struct CharacterCard : View{
                                 .frame(width:90,height: 90)
                                 .padding(.top,10)
                         case .failure:
-                            Color.red.frame(width: 20, height: 20)
+                            Color.red.frame(width:90,height: 90)
+                                .aspectRatio(contentMode: .fill)
+                                .clipShape(Circle())
                         @unknown default:
-                            Color.gray.frame(width: 20, height: 20)
+                            Color.gray.frame(width:90,height: 90)
+                                .aspectRatio(contentMode: .fill)
+                                .clipShape(Circle())
                         }
                     }
 
