@@ -1,7 +1,7 @@
 # Hogwarts !
 A Harry Potter Inspited Swift UI iOS App
 
-This App is made in Swift UI ❤️ , powered by PotterHead Rest APi for Harry Potter dataset. 
+This App is made in Swift UI ❤️ , powered by [PotterHead](https://potterhead-api.vercel.app/)  Rest APi for Harry Potter dataset. 
 
 Here are some Screenshots attached - 
 
