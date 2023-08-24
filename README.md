@@ -7,19 +7,18 @@ Here are some Screenshots attached -
 
 <!-- ![Home](/screenshots/home.jpg?raw=true "Home Screen") -->
 
-<img src="/screenshots/home.jpg" alt="Home Screen" width="400"/>
+<img src="/screenshots/home.jpg" alt="Home Screens" width="400"/>
 
-![Characters](/screenshots/characters.jpg?raw=true "Character Screens")
-
-![Movies](/screenshots/movies.jpg?raw=true "Movies Screens")
-
-![Books](/screenshots/books.jpg?raw=true "Books Screens")
-
-![Spells](/screenshots/spells.jpg?raw=true "Spells Screens")
-
-![About](/screenshots/about.jpg?raw=true "About Screen")
+<img src="/screenshots/characters.jpg" alt="Character Screens" width="400"/>
 
 
+<img src="/screenshots/movies.jpg" alt="Movies Screens" width="400"/>
+
+<img src="/screenshots/books.jpg" alt="Books Screens" width="400"/>
+
+<img src="/screenshots/spells.jpg" alt="Spells Screens" width="400"/>
+
+<img src="/screenshots/about.jpg" alt="About Screen" width="400"/>
 
 
 :---------------:|:----------------:|
