@@ -7,7 +7,7 @@ Here are some Screenshots attached -
 
 <!-- ![Home](/screenshots/home.jpg?raw=true "Home Screen") -->
 
-<img src="/screenshots/home.jpg.jpg" alt="Home Screen" width="200"/>
+<img src="/screenshots/home.jpg" alt="Home Screen" width="200"/>
 
 ![Characters](/screenshots/characters.jpg?raw=true "Character Screens")
 
