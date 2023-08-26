@@ -117,6 +117,7 @@ struct CharacterCard : View{
                         .fontDesign(.default)
                         .padding(.top)
                         .frame(width: 120)
+                        .multilineTextAlignment(.center)
                     
                     Text(subText)
                         .foregroundColor(Color.gray)

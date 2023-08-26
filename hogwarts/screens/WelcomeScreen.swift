@@ -16,7 +16,7 @@ struct WelcomeScreen: View {
                 .frame(width: .infinity,height: .infinity,alignment: .center)
             
             VStack {
-                Image("iconLogo")
+                Image("logoNoBg")
                     .resizable()
                     .frame(width: 270,height: 250,alignment: .center)
                     .padding()

@@ -11,7 +11,7 @@ struct AboutScreen: View {
     var body: some View {
         VStack(alignment: .center){
             
-            Image("iconLogo")
+            Image("logoNoBg")
                 .resizable()
                 .frame(width: 100,height: 100,alignment: .center)
             
@@ -25,11 +25,13 @@ struct AboutScreen: View {
                 .foregroundColor(.black)
                 .font(.system(size: 20))
                 .padding(.bottom,5)
+                
             
 
             Text("From Character to Book, from Spells to Movies. We have everything you need !")
                 .foregroundColor(.gray)
-            
+                .multilineTextAlignment(.center)
+           
             Text("Made with ❤️")
                 .foregroundColor(Color.gray)
                 .padding(.top,40)

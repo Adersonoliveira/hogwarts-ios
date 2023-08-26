@@ -38,7 +38,7 @@
 		D666C52F2A97E54900E8C1E6 /* BookInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoScreen.swift; sourceTree = "<group>"; };
 		D69F27052A9699FD00168DF4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		D69F270A2A96AC0500168DF4 /* CharacterInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoScreen.swift; sourceTree = "<group>"; };
-		D6FD31712A962CF500CFAA23 /* hogwarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hogwarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FD31712A962CF500CFAA23 /* Hogwarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hogwarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD31742A962CF500CFAA23 /* hogwartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hogwartsApp.swift; sourceTree = "<group>"; };
 		D6FD31762A962CF500CFAA23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D6FD31782A962CF600CFAA23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		D6FD31722A962CF500CFAA23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6FD31712A962CF500CFAA23 /* hogwarts.app */,
+				D6FD31712A962CF500CFAA23 /* Hogwarts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			);
 			name = hogwarts;
 			productName = hogwarts;
-			productReference = D6FD31712A962CF500CFAA23 /* hogwarts.app */;
+			productReference = D6FD31712A962CF500CFAA23 /* Hogwarts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -362,7 +362,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.suyash.hogwarts;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hogwarts;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -393,7 +393,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.suyash.hogwarts;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hogwarts;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

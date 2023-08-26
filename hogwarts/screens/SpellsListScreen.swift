@@ -23,6 +23,7 @@ struct SheetView: View {
                 .foregroundColor(.black)
                 .font(.system(size: 20))
                 .padding(.bottom,5)
+                .multilineTextAlignment(.center)
             
 
             Text(spell.description)
