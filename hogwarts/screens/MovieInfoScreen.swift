@@ -1,10 +1,3 @@
-//
-//  MovieInfoScreen.swift
-//  hogwarts
-//
-//  Created by Suyash Vashishtha on 24/08/23.
-//
-
 import SwiftUI
 
 struct MovieInfoScreen: View {
