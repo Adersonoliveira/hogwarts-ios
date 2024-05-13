@@ -1,9 +1,3 @@
-//
-//  BookInfoScreen.swift
-//  hogwarts
-//
-//  Created by Suyash Vashishtha on 25/08/23.
-//
 
 import SwiftUI
 
